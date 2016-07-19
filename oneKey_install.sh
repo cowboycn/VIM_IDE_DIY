@@ -38,9 +38,9 @@ fi
 
 echo "[2/$COUNT]"
 
-sudo cp -r configure/.vim $CURRENT_DIR/ && sudo cp configure/.vimrc $CURRENT_DIR
+sudo cp -r configure/vim $CURRENT_DIR/.vim && sudo cp configure/vimrc $CURRENT_DIR/.vimrc
 if [ $CURRENT_DIR != "/root" ];then
-    sudo cp -r configure/.vim /root/ && sudo cp configure/.vimrc /root/
+    sudo cp -r configure/vim /root/.vim && sudo cp configure/vimrc /root/.vimrc
 fi
 
 echo "[$COUNT/$COUNT]"
